@@ -4,7 +4,7 @@ let backgroundArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
 
 function changeBackground() {
   let index = Math.floor(Math.random() * backgroundArray.length);
-  landing.style.backgroundImage = `url("../imgs/${backgroundArray[index]}")`;
+  landing.style.backgroundImage = `url("imgs/${backgroundArray[index]}")`;
 }
 let backgroundOpt = true;
 let counter;
@@ -55,7 +55,7 @@ if (backgroundImg !== null) {
 }
 backgroundArray.forEach(function (imag) {
   let imgs8 = document.createElement("img");
-  imgs8.src = `../imgs/${imag}`;
+  imgs8.src = `imgs/${imag}`;
   imgsDiv.append(imgs8);
   imgs8.addEventListener("click", function (e) {
     landing.style.backgroundImage = `url("${e.target.src}")`;
