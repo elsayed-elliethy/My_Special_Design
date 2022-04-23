@@ -34,7 +34,7 @@ backgroundSpan.forEach(function (span) {
 
     if (e.target.dataset.background === "yes") {
       backgroundOpt = true;
-      counter = setInterval(changeBackground, 1000);
+      counter = setInterval(changeBackground, 10000);
       window.localStorage.setItem("Random-background", true);
     } else {
       backgroundOpt = false;
